@@ -15,8 +15,8 @@ const AnimatedRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/board" element={<BoardList />} />
-        <Route path="/board/:boardId" element={<BoardDetail />} />
+        <Route path="/boards" element={<BoardList />} />
+        <Route path="/boards/:boardId" element={<BoardDetail />} />
       </Routes>
     </AnimatePresence>
   );
