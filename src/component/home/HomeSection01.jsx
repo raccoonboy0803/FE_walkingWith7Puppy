@@ -16,7 +16,12 @@ const HomeSection01 = () => {
         </Describe>
       </TextContainer>
       <Link to={PATH_URL.BOARD}>
-        <Button>WWP 산책메이트 찾기{rightArrowIcon}</Button>
+        <Button>
+          <div>
+            <span>WWP</span> 산책메이트 찾기
+          </div>
+          {rightArrowIcon}
+        </Button>
       </Link>
     </Section01>
   );
@@ -54,6 +59,7 @@ const TextContainer = styled.div`
 const Title = styled.h1`
   font-size: 3.2rem;
   font-weight: bold;
+  font-family: 'Rubik', sans-serif;
 
   @media screen and (max-width: 689px) {
     font-size: 2.8rem;
@@ -77,6 +83,10 @@ const Button = styled.button`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  span {
+    font-family: 'Rubik', sans-serif;
+  }
 
   :hover {
     transition: 0.7s;
