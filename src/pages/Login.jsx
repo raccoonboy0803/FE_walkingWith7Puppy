@@ -34,7 +34,7 @@ const Login = () => {
 
       const accessHeader = response?.headers.get('ACCESS_KEY');
       const refreshHeader = response?.headers.get('REFRESH_KEY');
-
+      // const accessHeader = response?.headers.get('authorization');
       const acessToken = accessHeader?.split(' ')[1];
       const refreshToken = refreshHeader?.split(' ')[1];
       const userToken = jwtDecode(acessToken);
